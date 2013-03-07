@@ -1,0 +1,126 @@
+---
+layout: post
+title: Using Pull Requests
+---
+
+h2. {{ page.title }}
+
+
+p(intro). Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
+
+p(intro). This guide walks through the process of sending a hypothetical pull request and using the various code review and management tools to take the change to completion.
+
+h3. A Quick Note on Collaborative Development Models
+
+p. There are two popular models of collaborative development on GitHub:
+
+h3. Fork &amp; Pull
+
+p. The <em>Fork &amp; Pull Model</em> lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer. This model reduces the amount of friction for new contributors and is popular with open source projects because it allows people to work independently without upfront coordination.
+
+h3. Shared Repository Model
+
+p. The <em>Shared Repository Model</em> is more prevalent with small teams and organizations collaborating on private projects. Everyone is granted push access to a single shared repository and topic branches are used to isolate changes.
+
+p. Pull requests are especially useful in the <em>Fork &amp; Pull Model</em> because they provide a way to notify project maintainers about changes in your fork. However, they're also useful in the <em>Shared Repository Model</em> where they're used to initiate code review and general discussion about a set of changes before being merged into a mainline branch.
+
+h3. Before You Begin
+
+p. This guide assumes that <a href="https://github.com/signup">you have a GitHub account</a>, that you've forked an existing repository and pushed your changes. For help with forking and pushing changes, see the <a href="/articles/fork-a-repo">Forking a Repo</a> article.
+
+h3. Initiating The Pull Request
+
+p. In the following example, <strong>codercat</strong> has completed some work on a fork of the Octocat's Spoon-Knife repo, pushed a commit to a topic branch in his fork, and would like someone to review and merge.
+
+p. Navigate to your repository with the changes you want someone else to pull and press the <em>Pull Request</em> button.
+
+<ol>
+<li><img src="https://github-images.s3.amazonaws.com/help/pick-your-branch.png" alt="">Switch to your branch
+
+</li>
+<li><img src="https://github-images.s3.amazonaws.com/help/click-pull-request.png" alt="">Click the Pull Request button
+
+</li>
+</ol>p. Pull requests can be sent from any branch or commit but it's recommended that a topic branch be used so that follow-up commits can be pushed to update the pull request if necessary.
+
+h3. Previewing The Pull Request
+
+p. After pressing the <em>Pull Request</em> button, you are presented with a preview page where you can enter a title and optional description, see exactly what commits will be included when the pull request is sent, and also see who the pull request will be sent to:
+
+p. <img src="https://github-images.s3.amazonaws.com/help/pull-request.png" alt="">
+
+p. If you're sending from a topic branch, the title is pre-filled based on the name of the branch. Markdown is supported in the description, so you can embed images or use preformatted text blocks.
+
+p. Switch to the <em>Commits</em> tab to ensure that the correct set of changes is being sent:
+
+p. <img src="https://github-images.s3.amazonaws.com/help/my-commits.png" alt="">
+
+p. Review the diff of all changes by switching to the <em>Files Changed</em> tab:
+
+p. <img src="https://github-images.s3.amazonaws.com/help/my-changes.png" alt="">
+
+h3. Changing The Branch Range and Destination Repository
+
+p. By default, pull requests are assumed to be based on the parent-most repository's integration branch. In this case, the <code>codercat/Spoon-Knife</code> repository was forked from <code>octocat/Spoon-Knife</code> so the pull request is assumed to be based on the <code>master</code> branch of the <code>octocat/Spoon-Knife</code> repository. In a great majority of cases, the defaults will be right; however, if any of this information is incorrect, you can change the parent repo and branch from the drop-down lists.
+
+p. <img src="https://github-images.s3.amazonaws.com/help/change-branches.png" alt="">
+
+p. The easiest way of thinking about the branch range is this: the <em>base branch</em> is <strong>where</strong> you think changes should be applied, the <em>head branch</em> is <strong>what</strong> you would like to be applied.
+
+p. Changing the base repository changes who is notified of the pull request. Everyone that can push to the base repository will receive an email notification and see the new pull request in their dashboard the next time they log in.
+
+p. When you change any of the info in the branch range, the commit and files changed preview areas will update to show your new range.
+
+h3. Sending The Pull Request
+
+p. Once you've entered the title and description, made any necessary customizations to the commit range, and reviewed the commits and file changes to be sent, press the <em>Send pull request</em> button.
+
+p. <img src="https://github-images.s3.amazonaws.com/help/send-pull-request.png" alt="">
+
+p. The pull request is sent immediately. You're taken to the main pull request discussion and review page.
+
+h3. Managing Pull Requests
+
+p. All pull requests sent or received by you are browsable through the pull request dashboard.
+
+p. <img src="https://github-images.s3.amazonaws.com/help/manage-my-pull-requests.png" alt="">
+
+p. Pull requests for a specific repository are also browsable by anyone with access by visiting the <em>Pull Requests</em> page.
+
+p. <img src="https://github-images.s3.amazonaws.com/help/repo-pull-requests.png" alt="">
+
+p. The pull request dashboard and the repository pull request list support a wide range of filtering and sorting controls. Use them to narrow down the list to the pull requests you're interested in.
+
+h3. Reviewing Proposed Changes
+
+p. When you receive a pull request, the first thing to do is review the set of proposed changes. Pull requests are tightly integrated with the underlying git repository, so you can see exactly what commits would be merged should the request be accepted:
+
+p. <img src="https://github-images.s3.amazonaws.com/help/review-commits.png" alt="">
+
+p. You can also review the cumulative diff of all file changes across all commits.
+
+p. <img src="https://github-images.s3.amazonaws.com/help/review-changes.png" alt="">
+
+h3. Pull Request Discussion
+
+p. After reviewing the basic description, commits, and cumulative diff, the person tasked with applying the changes may have questions or comments. Perhaps the coding style doesn't match project guideline, or the change is missing unit tests, or maybe everything looks great and some props are in order. The discussion view is designed to encourage and capture this type of discussion.
+
+p. <img src="https://github-images.s3.amazonaws.com/help/conversation.png" alt="">
+
+p. The discussion view starts with the pull request's original title and description and then captures additional activity to display chronologically from there. Any of the following types of activity are captured as they happen:
+
+* Comments left on the pull request itself.
+* Additional commits pushed to the pull request's branch.
+* File and line notes left on any of the commits included in the pull request's range.
+
+p. Pull request comments are Markdown compatible, so you can embed images, use preformatted text blocks, and other formatting supported by Markdown.
+
+h3. Viewing long-running Pull Requests
+
+p. When a feature or a bugfix goes on for months but never ships nor dies, you often want to take a closer look to see what's preventing that Pull Request from being resolved. Making it possible to find old but still-active Pull Requests makes that easier.
+
+p. You can view and sort long-running Pull Requests from your repository's Pull Request page.
+
+p. <img src="https://f.cloud.github.com/assets/597/55249/a8e84136-5abd-11e2-943e-b852a1b3f44a.png" alt="">
+
+p. A long-running Pull Request is one that has existed for more than a month and which has seen activity within the past month. This filter displays those long-running Pull Requests sorted by life span: the amount of time from creation to the most recent activity.
