@@ -1,0 +1,8 @@
+---
+layout: post
+title: Erstellen eines "Forks"
+---
+
+h2. {{ page.title }}
+
+p. that you've forked an existing repository and pushed your changes. For help with forking and pushing changes, see the <a href="/articles/fork-a-repo">Forking a Repo</a> article.

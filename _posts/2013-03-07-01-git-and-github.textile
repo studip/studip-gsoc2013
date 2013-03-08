@@ -1,0 +1,3 @@
+h2. {{ page.title }}
+
+p. This guide assumes that <a href="https://github.com/signup">you have a GitHub account</a>
