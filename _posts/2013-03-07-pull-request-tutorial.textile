@@ -1,11 +1,23 @@
 ---
 layout: post
-title: Using Pull Requests
+title: Bugs beheben via Github
 ---
 
-h1. IN PROGRESS
-
 h2. {{ page.title }}
+
+p. Um für den Stud.IP Bug Bash 2013 Fehlerkorrekturen einzureichen, gibt es viele Möglichkeiten: per E-Mail, Brieftaube oder eben hier auf Github.
+
+p. Dazu haben wir eine aktuelle Version des Stud.IP-Codes bei Github als sogenanntes Repository eingestellt. Wie du hier Fehler beheben und einsenden kannst, wollen wir nun genau erklären. Das grundsätzliche Vorgehen sieht dafür so aus:
+
+* Einrichten von Git und Anmeldung bei Github
+* Anlegen eines Stud.IP "forks"
+* Für jeden Fehler:
+  * Anlegen eines "topic branches"
+  * Editieren des Codes
+  * Absenden eines "pull requests"
+
+p. Vielleicht klingt das jetzt alles chinesisch; im weiteren werden wir aber alles genau erklären.
+
 
 
 p(intro). Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
