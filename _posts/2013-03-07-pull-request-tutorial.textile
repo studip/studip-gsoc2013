@@ -9,7 +9,7 @@ p. Um für den Stud.IP Bug Bash 2013 Fehlerkorrekturen einzureichen, gibt es vie
 
 p. Dazu haben wir eine aktuelle Version des Stud.IP-Codes bei Github als sogenanntes Repository eingestellt. Wie du hier Fehler beheben und einsenden kannst, wollen wir nun genau erklären. Das grundsätzliche Vorgehen sieht dafür so aus:
 
-* Einrichten von Git und Anmeldung bei Github
+* Einrichten von Git und Github
 * Anlegen eines Stud.IP "forks"
 * Für jeden Fehler:
   * Anlegen eines "topic branches"
@@ -18,25 +18,36 @@ p. Dazu haben wir eine aktuelle Version des Stud.IP-Codes bei Github als sogenan
 
 p. Vielleicht klingt das jetzt alles chinesisch; im weiteren werden wir aber alles genau erklären.
 
+h3 Das "Fork &amp; Pull"-Modell
 
+p. [...]
+
+h3. Einrichten von Git und Github
+
+p. [...]
+
+h3. Erstellen eines "Forks"
+
+p. [...]
+
+h3. Einen Fehler beheben
+
+p. [...]
+
+h3. Pull Requests senden
+
+p. [...]
+
+
+h3. <<alles ab hier integrieren>>
 
 p(intro). Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
 
 p(intro). This guide walks through the process of sending a hypothetical pull request and using the various code review and management tools to take the change to completion.
 
-h3. A Quick Note on Collaborative Development Models
-
-p. There are two popular models of collaborative development on GitHub:
-
 h3. Fork &amp; Pull
 
 p. The <em>Fork &amp; Pull Model</em> lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer. This model reduces the amount of friction for new contributors and is popular with open source projects because it allows people to work independently without upfront coordination.
-
-h3. Shared Repository Model
-
-p. The <em>Shared Repository Model</em> is more prevalent with small teams and organizations collaborating on private projects. Everyone is granted push access to a single shared repository and topic branches are used to isolate changes.
-
-p. Pull requests are especially useful in the <em>Fork &amp; Pull Model</em> because they provide a way to notify project maintainers about changes in your fork. However, they're also useful in the <em>Shared Repository Model</em> where they're used to initiate code review and general discussion about a set of changes before being merged into a mainline branch.
 
 h3. Before You Begin
 
@@ -73,6 +84,7 @@ p. Review the diff of all changes by switching to the <em>Files Changed</em> tab
 
 p. <img src="https://github-images.s3.amazonaws.com/help/my-changes.png" alt="">
 
+
 h3. Changing The Branch Range and Destination Repository
 
 p. By default, pull requests are assumed to be based on the parent-most repository's integration branch. In this case, the <code>codercat/Spoon-Knife</code> repository was forked from <code>octocat/Spoon-Knife</code> so the pull request is assumed to be based on the <code>master</code> branch of the <code>octocat/Spoon-Knife</code> repository. In a great majority of cases, the defaults will be right; however, if any of this information is incorrect, you can change the parent repo and branch from the drop-down lists.
@@ -105,16 +117,6 @@ p. <img src="https://github-images.s3.amazonaws.com/help/repo-pull-requests.png"
 
 p. The pull request dashboard and the repository pull request list support a wide range of filtering and sorting controls. Use them to narrow down the list to the pull requests you're interested in.
 
-h3. Reviewing Proposed Changes
-
-p. When you receive a pull request, the first thing to do is review the set of proposed changes. Pull requests are tightly integrated with the underlying git repository, so you can see exactly what commits would be merged should the request be accepted:
-
-p. <img src="https://github-images.s3.amazonaws.com/help/review-commits.png" alt="">
-
-p. You can also review the cumulative diff of all file changes across all commits.
-
-p. <img src="https://github-images.s3.amazonaws.com/help/review-changes.png" alt="">
-
 h3. Pull Request Discussion
 
 p. After reviewing the basic description, commits, and cumulative diff, the person tasked with applying the changes may have questions or comments. Perhaps the coding style doesn't match project guideline, or the change is missing unit tests, or maybe everything looks great and some props are in order. The discussion view is designed to encourage and capture this type of discussion.
@@ -128,13 +130,3 @@ p. The discussion view starts with the pull request's original title and descrip
 * File and line notes left on any of the commits included in the pull request's range.
 
 p. Pull request comments are Markdown compatible, so you can embed images, use preformatted text blocks, and other formatting supported by Markdown.
-
-h3. Viewing long-running Pull Requests
-
-p. When a feature or a bugfix goes on for months but never ships nor dies, you often want to take a closer look to see what's preventing that Pull Request from being resolved. Making it possible to find old but still-active Pull Requests makes that easier.
-
-p. You can view and sort long-running Pull Requests from your repository's Pull Request page.
-
-p. <img src="https://f.cloud.github.com/assets/597/55249/a8e84136-5abd-11e2-943e-b852a1b3f44a.png" alt="">
-
-p. A long-running Pull Request is one that has existed for more than a month and which has seen activity within the past month. This filter displays those long-running Pull Requests sorted by life span: the amount of time from creation to the most recent activity.
