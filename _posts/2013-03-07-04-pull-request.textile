@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Einen Fehler beheben
+title: Pull Request senden
 ---
 
 h2. {{ page.title }}
