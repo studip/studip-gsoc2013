@@ -5,76 +5,15 @@ title: Pull Request senden
 
 h2. {{ page.title }}
 
-p. Navigate to your repository with the changes you want someone else to pull and press the <em>Pull Request</em> button.
+p. Jetzt müssen nur noch die Entwickler des ursprünglichen Projekts von deinen Änderungen erfahren. Dazu musst du zu jedem deiner "topic branches" navigieren und dort den "Pull Request"-Knopf drücken:
 
-<ol>
-<li><img src="https://github-images.s3.amazonaws.com/help/pick-your-branch.png" alt="">Switch to your branch
-
-</li>
-<li><img src="https://github-images.s3.amazonaws.com/help/click-pull-request.png" alt="">Click the Pull Request button
-
-</li>
-</ol>p. Pull requests can be sent from any branch or commit but it's recommended that a topic branch be used so that follow-up commits can be pushed to update the pull request if necessary.
-
-h3. Previewing The Pull Request
-
-p. After pressing the <em>Pull Request</em> button, you are presented with a preview page where you can enter a title and optional description, see exactly what commits will be included when the pull request is sent, and also see who the pull request will be sent to:
-
-p. <img src="https://github-images.s3.amazonaws.com/help/pull-request.png" alt="">
-
-p. If you're sending from a topic branch, the title is pre-filled based on the name of the branch. Markdown is supported in the description, so you can embed images or use preformatted text blocks.
-
-p. Switch to the <em>Commits</em> tab to ensure that the correct set of changes is being sent:
-
-p. <img src="https://github-images.s3.amazonaws.com/help/my-commits.png" alt="">
-
-p. Review the diff of all changes by switching to the <em>Files Changed</em> tab:
-
-p. <img src="https://github-images.s3.amazonaws.com/help/my-changes.png" alt="">
+bc. fehlendes Bild: Klick den "Pull Request"-Knopf
 
 
-h3. Changing The Branch Range and Destination Repository
+p. Sobald du den Titel und die Beschreibung deines "Pull Requests" eingegeben hast, kannst du dir deine Änderungen noch einmal durchschauen und dann auf den "Send pull request"-Knopf drücken:
 
-p. By default, pull requests are assumed to be based on the parent-most repository's integration branch. In this case, the <code>codercat/Spoon-Knife</code> repository was forked from <code>octocat/Spoon-Knife</code> so the pull request is assumed to be based on the <code>master</code> branch of the <code>octocat/Spoon-Knife</code> repository. In a great majority of cases, the defaults will be right; however, if any of this information is incorrect, you can change the parent repo and branch from the drop-down lists.
+bc. fehlendes Bild: Klick den "Send pull request"-Knopf
 
-p. <img src="https://github-images.s3.amazonaws.com/help/change-branches.png" alt="">
+p. Dein "pull request" wird dann direkt abgeschickt und du gelangst zur Diskussionsseite dieses "pull requests". Dort werden ...
 
-p. The easiest way of thinking about the branch range is this: the <em>base branch</em> is <strong>where</strong> you think changes should be applied, the <em>head branch</em> is <strong>what</strong> you would like to be applied.
-
-p. Changing the base repository changes who is notified of the pull request. Everyone that can push to the base repository will receive an email notification and see the new pull request in their dashboard the next time they log in.
-
-p. When you change any of the info in the branch range, the commit and files changed preview areas will update to show your new range.
-
-h3. Sending The Pull Request
-
-p. Once you've entered the title and description, made any necessary customizations to the commit range, and reviewed the commits and file changes to be sent, press the <em>Send pull request</em> button.
-
-p. <img src="https://github-images.s3.amazonaws.com/help/send-pull-request.png" alt="">
-
-p. The pull request is sent immediately. You're taken to the main pull request discussion and review page.
-
-h3. Managing Pull Requests
-
-p. All pull requests sent or received by you are browsable through the pull request dashboard.
-
-p. <img src="https://github-images.s3.amazonaws.com/help/manage-my-pull-requests.png" alt="">
-
-p. Pull requests for a specific repository are also browsable by anyone with access by visiting the <em>Pull Requests</em> page.
-
-p. <img src="https://github-images.s3.amazonaws.com/help/repo-pull-requests.png" alt="">
-
-p. The pull request dashboard and the repository pull request list support a wide range of filtering and sorting controls. Use them to narrow down the list to the pull requests you're interested in.
-
-h3. Pull Request Discussion
-
-p. After reviewing the basic description, commits, and cumulative diff, the person tasked with applying the changes may have questions or comments. Perhaps the coding style doesn't match project guideline, or the change is missing unit tests, or maybe everything looks great and some props are in order. The discussion view is designed to encourage and capture this type of discussion.
-
-p. <img src="https://github-images.s3.amazonaws.com/help/conversation.png" alt="">
-
-p. The discussion view starts with the pull request's original title and description and then captures additional activity to display chronologically from there. Any of the following types of activity are captured as they happen:
-
-* Comments left on the pull request itself.
-* Additional commits pushed to the pull request's branch.
-* File and line notes left on any of the commits included in the pull request's range.
-
-p. Pull request comments are Markdown compatible, so you can embed images, use preformatted text blocks, and other formatting supported by Markdown.
+p. to be continued
