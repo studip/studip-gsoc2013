@@ -5,4 +5,10 @@ title: Einen Fehler beheben
 
 h2. {{ page.title }}
 
+
+* Für jeden Fehler:
+  * Anlegen eines "topic branches"
+  * Editieren des Codes
+
+
 p. In the following example, <strong>codercat</strong> has completed some work on a fork of the Octocat's Spoon-Knife repo, pushed a commit to a topic branch in his fork, and would like someone to review and merge.

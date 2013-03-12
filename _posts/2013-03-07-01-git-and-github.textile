@@ -5,4 +5,6 @@ title: Einrichten von Git und Github
 
 h2. {{ page.title }}
 
-p. This guide assumes that <a href="https://github.com/signup">you have a GitHub account</a>
+p. Zum Arbeiten mit Github braucht man natürlich zunächst <a href="https://github.com/signup">einen kostenlosen GitHub-Account</a>. Dazu muss man lediglich einen Nutzernamen, Passwort und E-Mail angeben.
+
+p. Wenn man selbst Fehler beheben möchte, benötigt man außerdem <a href="http://git-scm.com/">git</a> auf seinem Computer. Git ist eine freie und quelloffene, verteilte <a href="http://de.wikipedia.org/wiki/Versionsverwaltung">Versionsverwaltung</a>. Praktischerweise gibt es bei GitHub auch für das Installieren und Einrichten von Git eine passende <a href="https://help.github.com/articles/set-up-git">Hilfeseite</a>.

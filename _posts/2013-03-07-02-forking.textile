@@ -5,4 +5,41 @@ title: Erstellen eines "Forks"
 
 h2. {{ page.title }}
 
-p. that you've forked an existing repository and pushed your changes. For help with forking and pushing changes, see the <a href="/articles/fork-a-repo">Forking a Repo</a> article.
+p. Wie weiter oben beim "Fork &amp; Pull"-Modell erklärt, muss man
+sich zunächst eine eigene Kopie &mdash; also einen "Fork" &mdash; von
+Stud.IP anlegen, bevor man Änderungen vornehmen kann. Dafür sind nur 2
+Schritte erforderlich:
+
+h3. Schritt 1: Das Stud.IP-Repository "forken"
+
+p. Logge dich bei GitHub ein und geh zum Stud.IP-Repository, das wir für den Bug Bash angelegt haben:
+
+p. <a href="https://github.com/studip/studip-bugbash-2013">https://github.com/studip/studip-bugbash-2013</a>
+
+p. Dort findest du den "Fork"-Knopf:
+
+<img src=images/fork.png>
+
+p. GitHub legt nun eine Kopie vom offiziellen Stud.IP-Repository für dich an. Das sieht dann in etwa so aus:
+
+<img src=images/forked.png>
+
+p. Leicht an der URI und der Überschrift ist nun zu erkennen, dass dies nicht mehr das offizielle Stud.IP-Repository ist, sondern dein ganz eigenes.
+
+em. Herzlichen Glückwunsch!
+
+h3. Schritt 2: Deinen "Fork" klonen
+
+p. Du hast nun erfolgreich deinen "Fork" angelegt. Bislang existiert
+der Quellcode damit aber nur bei GitHub. Um ihn auf deinen
+Rechner zu bekommen, musst du dein Projekt klonen. Dazu musst du auf
+der Kommandozeile folgendes ausführen:
+
+code. git clone https://github.com/&lt;USERNAME&gt;/studip-bugbash-2013
+
+p. (Ersetze dabei <emph>&lt;USERNAME&gt;</emph> durch deinen Nutzernamen.)
+
+p. Da Stud.IP ein recht großes Projekt ist, wird dieser Vorgang je
+nach Übertragungsgeschwindigkeit einige Sekunden dauern.
+
+p. Et voilà! Das Fehlerbeheben kann losgehen.
