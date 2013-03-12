@@ -5,9 +5,11 @@ title: Bugs beheben via Github
 
 h2. {{ page.title }}
 
-p. Um für den Stud.IP Bug Bash 2013 Fehlerkorrekturen einzureichen, gibt es viele Möglichkeiten: per E-Mail, Brieftaube oder eben hier auf Github.
+p. Um für den Stud.IP Bug Bash 2013 Fehlerkorrekturen einzureichen, gibt es verschiedene Möglichkeiten. Entweder man verschickt seine Korrekturen (auch Patches genannt) per E-Mail, mittels Github oder im schlimmsten Fall per Brieftaube.
 
-p. Dazu haben wir eine aktuelle Version des Stud.IP-Codes bei Github als sogenanntes Repository eingestellt. Wie du hier Fehler beheben und einsenden kannst, wollen wir nun genau erklären. Das grundsätzliche Vorgehen sieht dafür so aus:
+p. Für das Einsenden von Patches mittels Github, haben wir eine aktuelle Version des Stud.IP-Codes bei Github als sogenanntes Repository eingestellt: http://github.com/studip/studip-bugbash-2013
+
+p. Wie du hier Fehler beheben und einsenden kannst, wollen wir nun genauer erklären. Das grundsätzliche Vorgehen sieht dafür so aus:
 
 * Einrichten von Git und Github
 * Anlegen eines Stud.IP "forks"
@@ -16,14 +18,14 @@ p. Dazu haben wir eine aktuelle Version des Stud.IP-Codes bei Github als sogenan
   * Editieren des Codes
   * Absenden eines "pull requests"
 
-p. Vielleicht klingt das jetzt alles chinesisch; im weiteren werden wir aber alles genau erklären.
+p. Das klingt jetzt vielleicht noch alles chinesisch, letztlich ist es aber ganz einfach.
 
 h3. Das "Fork &amp; Pull"-Modell
 
-p(intro). Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
+p. Das eben beschriebene Vorgehen wird das "Fork &amp; Pull"-Modell genannt. Mit "fork" ist gemeint, dass man sich vom Quellcode eines (Open-Source-)Projekts wie Stud.IP eine eigene Kopie macht und darin Änderungen vornimmt, die im ursprünglichen Projekt (noch) nicht vorhanden sind. Weil gleichzeitig Änderungen im Original und der eigenen Kopie gemacht werden, läuft der Quellcode gabelförmig ("fork") auseinander.
 
-p(intro). This guide walks through the process of sending a hypothetical pull request and using the various code review and management tools to take the change to completion.
+p. Mit "Pull" sind "pull requests" gemeint. Mit diesen läßt man andere Entwickler von den eigenen Änderungen wissen, die man in seiner eigenen Kopie gemacht hat. Nehmen die Entwickler des Originals diesen "pull request" an, wird dein Code in das ursprüngliche Projekt übernommen. "Pull requests" sind also die ausgleichende Gegenbewegung zu einem "Fork". Während ein "Fork" aufspaltet, führt ein "Pull request" wieder zusammen.
 
-h3. Fork &amp; Pull
+p. Sobald du einen "pull request" (also deine Einladung an die anderen Entwickler, deine Änderungen zu integrieren)  abgesendet hast, können diese deine Patches durchsehen, diskutieren und möglicherweise integrieren.
 
-p. The <em>Fork &amp; Pull Model</em> lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer. This model reduces the amount of friction for new contributors and is popular with open source projects because it allows people to work independently without upfront coordination.
+p. Das "Fork &amp; Pull"-Modell erlaubt also, dass sich jeder eine Kopie eines Projekts anlegt und darin editiert, ohne die Erlaubnis erhalten zu müssen, dies im Original-Projekt machen zu dürfen. Die Änderungen müssen dann von den Entwicklern des Originalprojekts in deren Quellcode "gepullt" werden. Neuen Entwicklern werden so möglichst wenig Steine in den Weg gelegt und die ursprünglichen Entwickler haben nur geringen Koordinationsaufwand.
