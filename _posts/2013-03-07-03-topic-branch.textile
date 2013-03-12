@@ -12,13 +12,40 @@ p. Jetzt kann es dann endlich losgehen. Für jeden Fehler, den du beheben möcht
 * Deine Änderungen steckst du dann in dein lokales Repository (deinen Klon).
 * Sobald du deinen Änderungen getestet und für gut befunden hast, schickst du diese auch in dein Repository auf GitHub.
 
-p. Falls du mit Git noch nicht viele Erfahrungen gemacht hast, kannst du einen 15-minütigen Crash Course auf <a href="http://try.github.com/">http://try.github.com/</a> machen.
+p. Falls du mit Git noch nicht viele Erfahrungen gemacht hast, kannst du einen kurzen Crash Course auf <a href="http://try.github.com/">http://try.github.com/</a> machen.
 
-* Für jeden Fehler:
-  * Anlegen eines "topic branches"
-  * Editieren des Codes
+h3. Anlegen eines "topic branches"
 
+p. Eine der Stärken von Git ist es, einfach und schnell "branches" anzulegen. Auf die Weise können parallele Entwicklungsstränge gleichzeitig bearbeitet werden. Zum Beispiel ist es damit möglich, gleichzeitig Bugs in einer älteren Stud.IP-Version zu beheben, die aktuelle Version weiterzubearbeiten und außerdem neue Features parallel dazu zu entwickeln. Andere Versionsverwaltungen können das meist auch, git kann das aber besonders gut.
 
+p. "Topic branches" sind damit einfach Branches, die ein neues Thema anfangen, ohne die restliche Entwicklung zu stören. Um beim Bug Bash Fehler einzureichen, empfiehlt es sich sehr, für jeden einzelnen Bug einen eigenen "topic branch" anzulegen.
 
+p. Dazu ruft man einfach folgende Kommandos auf:
 
-p. In the following example, <strong>codercat</strong> has completed some work on a fork of the Octocat's Spoon-Knife repo, pushed a commit to a topic branch in his fork, and would like someone to review and merge.
+bc. git branch mein-topic-branch
+# erzeugt einen neuen branch namens mein-topic-branch
+git checkout mein-topic-branch
+# aktiviert diesen branch
+
+p. Zwischen "branches" hin- und herzuwechseln verwendet man @git checkout@:
+
+bc. git checkout master
+# aktiviert den Hauptzweig
+git checkout mein-topic-branch
+# aktiviert meinen "topic branch"
+
+h3. Editieren des Codes
+
+p. Nun kann man in seinem "branch" ungestört den Code editieren. Nach der Fehlerbehebung wird man seine Änderung in die Versionsverwaltung einchecken wollen. Dabei verwendet man wie üblich:
+
+bc. git add pfad/zur/geänderten/datei.php
+# fügt die Änderungen in dieser Datei in die Staging Area ein
+git commit
+# sichert die Änderungen aus der Staging Area in das Repository
+
+h3. Commits zu GitHub bringen
+
+p. Nachdem nun der "topic branch" passend ausgestattet wurde, muss er nur noch zu GitHub gelangen. Dazu muss er zu dorthin gepusht werden.
+
+bc. git push origin mein-topic-branch
+# pusht den gesamten branch zu GitHub
