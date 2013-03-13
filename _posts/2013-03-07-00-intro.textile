@@ -20,6 +20,9 @@ p. Wie du hier Fehler beheben und einsenden kannst, wollen wir nun genauer erkl�
 
 p. Das klingt jetzt vielleicht noch alles chinesisch, letztlich ist es aber ganz einfach.
 
+bq. Falls du Git im Prinzip schon kennst oder nur (zusätzlich) einen kurzen Befehlsüberblick haben möchtest,
+ist folgende Seite sehr zu emfpehlen: http://rogerdudler.github.com/git-guide/index.de.html
+
 h3. Das "Fork &amp; Pull"-Modell
 
 p. Das eben beschriebene Vorgehen wird das "Fork &amp; Pull"-Modell genannt. Mit "fork" ist gemeint, dass man sich vom Quellcode eines (Open-Source-)Projekts wie Stud.IP eine eigene Kopie macht und darin Änderungen vornimmt, die im ursprünglichen Projekt (noch) nicht vorhanden sind. Weil gleichzeitig Änderungen im Original und der eigenen Kopie gemacht werden, läuft der Quellcode gabelförmig ("fork") auseinander.
