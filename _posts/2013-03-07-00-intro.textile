@@ -7,7 +7,7 @@ h2. {{ page.title }}
 
 p. Um für den Stud.IP Bug Bash 2013 Fehlerkorrekturen einzureichen, gibt es verschiedene Möglichkeiten. Entweder man verschickt seine Korrekturen (auch Patches genannt) per E-Mail, mittels GitHub oder im schlimmsten Fall per Brieftaube.
 
-p. Für das Einsenden von Patches mittels GitHub, haben wir eine aktuelle Version des Stud.IP-Codes bei GitHub als sogenanntes Repository eingestellt: http://github.com/studip/studip-bugbash-2013
+p. Für das Einsenden von Patches mittels GitHub, haben wir eine aktuelle Version des Stud.IP-Codes bei GitHub als sogenanntes Repository eingestellt: <a href="http://github.com/studip/studip-bugbash-2013">http://github.com/studip/studip-bugbash-2013</a>
 
 p. Wie du hier Fehler beheben und einsenden kannst, wollen wir nun genauer erklären. Das grundsätzliche Vorgehen sieht dafür so aus:
 
@@ -20,7 +20,7 @@ p. Wie du hier Fehler beheben und einsenden kannst, wollen wir nun genauer erkl�
 
 p. Das klingt jetzt vielleicht noch alles chinesisch, letztlich ist es aber ganz einfach.
 
-p. Falls du Git im Prinzip schon kennst oder nur (zusätzlich) einen kurzen Befehlsüberblick haben möchtest, ist folgende Seite sehr zu empfehlen: http://rogerdudler.github.com/git-guide/index.de.html
+p. Falls du Git im Prinzip schon kennst oder nur (zusätzlich) einen kurzen Befehlsüberblick haben möchtest, ist folgende Seite sehr zu empfehlen: <a href="http://rogerdudler.github.com/git-guide/index.de.html">http://rogerdudler.github.com/git-guide/index.de.html</a>
 
 h3. Das "Fork &amp; Pull"-Modell
 
