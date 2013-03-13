@@ -20,8 +20,7 @@ p. Wie du hier Fehler beheben und einsenden kannst, wollen wir nun genauer erkl�
 
 p. Das klingt jetzt vielleicht noch alles chinesisch, letztlich ist es aber ganz einfach.
 
-bc. Falls du Git im Prinzip schon kennst oder nur (zusätzlich) einen kurzen Befehlsüberblick haben möchtest,
-ist folgende Seite sehr zu emfpehlen: http://rogerdudler.github.com/git-guide/index.de.html
+p. Falls du Git im Prinzip schon kennst oder nur (zusätzlich) einen kurzen Befehlsüberblick haben möchtest, ist folgende Seite sehr zu empfehlen: http://rogerdudler.github.com/git-guide/index.de.html
 
 h3. Das "Fork &amp; Pull"-Modell
 
