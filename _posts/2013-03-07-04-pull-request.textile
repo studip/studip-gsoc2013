@@ -7,13 +7,15 @@ h2. {{ page.title }}
 
 p. Jetzt müssen nur noch die Entwickler des ursprünglichen Projekts von deinen Änderungen erfahren. Dazu musst du zu jedem deiner "topic branches" navigieren und dort den "Pull Request"-Knopf drücken:
 
-bc. fehlendes Bild: Klick den "Pull Request"-Knopf
+<img src=images/pull_request_1.png>
 
 
 p. Sobald du den Titel und die Beschreibung deines "Pull Requests" eingegeben hast, kannst du dir deine Änderungen noch einmal durchschauen und dann auf den "Send pull request"-Knopf drücken:
 
-bc. fehlendes Bild: Klick den "Send pull request"-Knopf
+<img src=images/pull_request_2.png>
 
-p. Dein "pull request" wird dann direkt abgeschickt und du gelangst zur Diskussionsseite dieses "pull requests". Dort werden ...
+<img src=images/pull_request_3.png>
+
+p. Dein "pull request" wird dann direkt abgeschickt und du gelangst zur Diskussionsseite dieses "pull requests". Dort können dann von anderen Kommentare zu diesem Pull-Request abgegeben werden. Wenn sich jemand vom Bug Bash Team deine Änderungen angesehen hat, können diese nun bequem in den Hauptzweig von Stud.IP übernommen werden.
 
 p. to be continued
