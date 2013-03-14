@@ -18,7 +18,7 @@ class Admin_SemClassesController extends AuthenticatedController
             throw new AccessDeniedException(_("Kein Zugriff"));
         }
         PageLayout::setHelpKeyword("Admins.SemClasses");
-        PageLayout::setTitle("Seminarklassen");
+        PageLayout::setTitle("Veranstaltungskategorien");
     }
 
     public function overview_action()
@@ -27,7 +27,7 @@ class Admin_SemClassesController extends AuthenticatedController
         if (count($_POST) && Request::get("delete_sem_class")) {
             $sem_class = $GLOBALS['SEM_CLASS'][Request::get("delete_sem_class")];
             if ($sem_class->delete()) {
-                PageLayout::postMessage(MessageBox::success(_("Seminarklasse wurde gelöscht.")));
+                PageLayout::postMessage(MessageBox::success(_("Veranstaltungskategorie wurde gelöscht.")));
                 $GLOBALS['SEM_CLASS'] = SemClass::refreshClasses();
             }
         }
@@ -44,7 +44,7 @@ class Admin_SemClassesController extends AuthenticatedController
                 $sem_class->store();
             }
             $this->redirect(URLHelper::getURL($this->url_for('admin/sem_classes/details'), array('id' => $id)));
-            PageLayout::postMessage(MessageBox::success(_("Seminarklasse wurde erstellt.")));
+            PageLayout::postMessage(MessageBox::success(_("Veranstaltungskategorie wurde erstellt.")));
             $GLOBALS['SEM_CLASS'] = SemClass::refreshClasses();
         }
     }
