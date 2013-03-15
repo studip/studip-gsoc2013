@@ -368,7 +368,7 @@ class TreeAbstract {
     }
 
     function getShortPath($item_id, $length = null, $delimeter = ">", $offset = 0){
-        if (!$this->tree_data[$item_id]){
+        if (!$this->tree_data[$item_id] || $item_id == 'root') {
             return false;
         }
         $parents = array_reverse($this->getParents($item_id));
