@@ -559,11 +559,11 @@ function createLabel(){
         "selections_text_test" => _("Einen neuen Test"),
         "selections_text_middle" => _("in"),
         "selections_button" => "erstellen",
-        "selections_tooltip" => _("Umfrage oder Test erstellen."),
-        "selections_selectrange_text" => _("Umfragen und Tests aus "),
+        "selections_tooltip" => _("Erstellen"),
+        "selections_selectrange_text" => _("Umfragen und Tests aus dem Bereich"),
         "selections_allranges" => _("allen Bereichen"),
         "selections_selectrange_button" => "anzeigen",
-        "selections_selectrange_tooltip" => _("Bereich der angezeigten Umfragen und Tests ausw&auml;hlen."),
+        "selections_selectrange_tooltip" => _("Auswählen"),
 
         // labels for printSearchResults
         "searchresults_title" => _("Suchergebnisse"),
