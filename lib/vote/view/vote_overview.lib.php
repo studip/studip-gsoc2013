@@ -660,9 +660,13 @@ function makeNewVoteSelectForm($action){
         while($counter < $arraysize){
             $html .="      <option value=\"".$range[$counter][0]."\" ";
             // select current range
-            if($showrangeID == $range[$counter][0])
+            if($showrangeID == $range[$counter][0]) {
                 $html .= " selected";
-            $html .=       ">".htmlReady(my_substr ($range[$counter][1], 0, 40))."</option>\n";
+            }
+            if (strlen($range[$counter][1]) > 80) {
+                $html .= ' title="' . htmlReady($range[$counter][1]) . '"';
+            }
+            $html .=       ">".htmlReady(my_substr ($range[$counter][1], 0, 80))."</option>\n";
             $counter++;
         }
         $html .="      </select>\n";
@@ -708,7 +712,10 @@ function makeDisplaySelectForm($action){
         if($showrangeID == $range[$counter][0]){
             $html .= " selected";
         }
-        $html .=       ">".htmlReady(my_substr ($range[$counter][1],0, 40))."</option>\n";
+        if (strlen($range[$counter][1]) > 80) {
+            $html .= ' title="' . htmlReady($range[$counter][1]) . '"';
+        }
+        $html .=       ">".htmlReady(my_substr ($range[$counter][1],0, 80))."</option>\n";
 
         $counter++;
     }
