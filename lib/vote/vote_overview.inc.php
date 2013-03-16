@@ -88,7 +88,7 @@ if (($showrangeID) && ($voteaction != "search")){
     }
     else{
         //TODO: MessageBox verwenden
-        $safeguard = printSafeguard("ausruf",_("Sie haben kein Berechtigung für diesen Bereich oder der Bereich existiert nicht. Es werden Umfragen und Tests Ihrer Profilseite angezeigt."));
+        $safeguard = printSafeguard("ausruf",_("Sie haben keine Berechtigung für diesen Bereich oder der Bereich existiert nicht. Es werden Umfragen und Tests Ihrer Profilseite angezeigt."));
         $showrangeID = get_username ($userID);
     }
 }
