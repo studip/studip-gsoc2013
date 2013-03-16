@@ -213,11 +213,11 @@ function get_ampel_read ($mein_status, $admission_status, $read_level, $print="T
     return $ampel_status;
 }
 
-function htmlReady ($what, $trim = TRUE, $br = FALSE) {
+function htmlReady ($what, $trim = TRUE, $br = FALSE, $double_encode = FALSE) {
     if ($trim) {
-        $what = trim(htmlspecialchars($what, ENT_QUOTES, 'cp1252', false));
+        $what = trim(htmlspecialchars($what, ENT_QUOTES, 'cp1252', $double_encode));
     } else {
-        $what = htmlspecialchars($what,ENT_QUOTES, 'cp1252', false);
+        $what = htmlspecialchars($what,ENT_QUOTES, 'cp1252', $double_encode);
     }
 
     if ($br) { // fix newlines
@@ -247,7 +247,7 @@ function jsReady ($what = "", $target = "overlib") {
     break;
 
     case "contact" :
-        $what = htmlReady($what);
+        $what = htmlReady($what, true, false, true);
         $what = str_replace("\n","<br>",$what);
         $what = str_replace("\r","",$what);
         return $what;
