@@ -115,13 +115,9 @@ switch ($submitted_task) {
             break;
         }
 
-        if (!$Fakultaet) {
-            if ($perm->have_perm('root')) {
-                $Fakultaet = $i_id;
-            } else {
-                PageLayout::postMessage(MessageBox::error(_('Sie haben nicht die Berechtigung, neue Fakultäten zu erstellen')));
-                break;
-            }
+        if (!$Fakultaet && !$perm->have_perm('root')) {
+            PageLayout::postMessage(MessageBox::error(_('Sie haben nicht die Berechtigung, neue Fakultäten zu erstellen')));
+            break;
         }
 
         $data = array('name' => Request::get('Name'),
@@ -149,6 +145,16 @@ switch ($submitted_task) {
         }
 
         $i_id = $institute->getId();
+
+        if (!$Fakultaet) {
+            $institute->setValue('fakultaets_id', $i_id);
+            if (!$institute->store()) {
+                // Try rollback
+                $institute->delete();
+                PageLayout::postMessage(MessageBox::error(_('Die Einrichtung konnte nicht angelegt werden.')));
+                break;
+            }
+        }
 
         log_event("INST_CREATE", $i_id, NULL, NULL, ''); // logging
 
