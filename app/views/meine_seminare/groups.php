@@ -73,7 +73,7 @@ $groupables = array(
             </td>
         <? for ($i = 0; $i < 9; $i++): ?>
             <td class="gruppe<?= $i ?>">
-                <input type="radio" name="gruppe[<?= $member['seminar_id'] ?>]" value="<?= $i ?>"
+                <input type="radio" name="gruppe[<?= $member['seminar_id'] ?>]" value="<?= $i ?>" aria-label="<?=_('Zugeordnet zu Gruppe ') . $i ?>"
                        <? if ($my_sem[$member['seminar_id']]['gruppe'] == $i) echo 'checked'; ?>>
             </td>
         <? endfor; ?>
